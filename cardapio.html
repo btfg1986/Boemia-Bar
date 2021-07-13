@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1">
+
+  <title>Boemia Bar e Restaurante</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<!-- Primeira Seção - Cabeçalho -->
+
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"> <img src="./images/logo.png" alt="Boemia" opacity="1"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">SOBRE NÓS</a></li>
+          <li><a href="">CARDÁPIO</a></li>
+          <li><a href="fale_conosco.html">FALE CONOSCO</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Principais Cardápios</h1>
+  </section>
+
+  <!-- =====Cardápios===== -->
+
+  <section class="cardapio">
+    <h1>Principais Cardápios pros Boêmios</h1>
+    <p>sit amet justo donec enim diam vulputate ut pharetra sit</p>
+
+    <div class="row">
+      <div class="cardapio-col">
+        <h3>Pratos Executivos</h3>
+        <p>nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer vitae</p>
+      </div>
+      <div class="cardapio-col">
+        <h3>Entradas</h3>
+        <p>nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer vitae</p>
+      </div>
+      <div class="cardapio-col">
+        <h3>Petiscos dos Boêmios</h3>
+        <p>nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer vitae</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="cardapio-col">
+        <h3>Bebidas</h3>
+        <p>nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer vitae</p>
+      </div>
+      <div class="cardapio-col">
+        <h3>Sanduíches</h3>
+        <p>nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer vitae</p>
+      </div>
+      <div class="cardapio-col">
+        <h3>Pizzas</h3>
+        <p>nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer vitae</p>
+      </div>
+    </div>
+  </section>
+
+<!-- Rodapé -->
+
+<section class="footer">
+  <h4>Sobre Nós</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <br>ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <div class="icons">
+    <a href="https://www.facebook.com/boemiabarerestaurante" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+    <a href="https://www.instagram.com/boemia_bar/" target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a>
+    <a href=""><i class="fas fa-envelope-square fa-2x"></i></a>
+  </div>
+  <p>Made with  <i class="fab fa-html5 fa-2x"></i>  by Leonardo Rocha</p>
+  <div class="topo">
+      <a href="#navLinks">Volte ao Topo</a>
+  </div>
+</section>
+
+
+
+<!-- Javascript for toggle menu -->
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+
+</body>
+
+</html>
